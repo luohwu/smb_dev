@@ -30,3 +30,8 @@ wstool init
 wstool merge SMB_dev/smb2_0.rosinstall
 wstool up -j8
 ```
+
+If you're only interessted in running the simulation, you can run
+```
+catkin build smb_sim smb_path_planner
+```
