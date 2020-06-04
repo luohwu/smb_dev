@@ -1,0 +1,120 @@
+- git:
+    local-name: any_gazebo
+    uri: git@bitbucket.org:leggedrobotics/any_gazebo.git
+- git:
+    local-name: any_node
+    uri: https://github.com/leggedrobotics/any_node.git
+- git:
+    local-name: any_rbdl
+    uri: git@bitbucket.org:leggedrobotics/any_rbdl.git
+- git:
+    local-name: any_tools
+    uri: git@bitbucket.org:leggedrobotics/any_tools.git
+- git:
+    local-name: basic_filters
+    uri: git@bitbucket.org:leggedrobotics/basic_filters.git
+- git:
+    local-name: catkin_simple
+    uri: https://github.com/catkin/catkin_simple.git
+- git:
+    local-name: ceres_catkin
+    uri: https://github.com/ethz-asl/ceres_catkin.git
+- git:
+    local-name: collisions
+    uri: git@bitbucket.org:leggedrobotics/collisions.git
+- git:
+    local-name: confusion_dev
+    uri: git@bitbucket.org:leggedrobotics/confusion_dev.git
+- git:
+    local-name: cosmo
+    uri: git@bitbucket.org:leggedrobotics/cosmo.git
+- git:
+    local-name: eigen_catkin
+    uri: https://github.com/ethz-asl/eigen_catkin.git
+- git:
+    local-name: eigen_checks
+    uri: https://github.com/ethz-asl/eigen_checks.git
+- git:
+    local-name: elevation_mapping
+    uri: https://github.com/leggedrobotics/elevation_mapping.git
+- git:
+    local-name: gflags_catkin
+    uri: https://github.com/ethz-asl/gflags_catkin.git
+- git:
+    local-name: glog_catkin
+    uri: https://github.com/ethz-asl/glog_catkin.git
+- git:
+    local-name: grid_map
+    uri: https://github.com/leggedrobotics/grid_map.git
+- git:
+    local-name: kindr
+    uri: https://github.com/leggedrobotics/kindr.git
+- git:
+    local-name: kindr_ros
+    uri: https://github.com/leggedrobotics/kindr_ros.git
+- git:
+    local-name: message_logger
+    uri: https://github.com/leggedrobotics/message_logger.git
+- git:
+    local-name: minkindr
+    uri: https://github.com/ethz-asl/minkindr.git
+- git:
+    local-name: minkindr_ros
+    uri: https://github.com/ethz-asl/minkindr_ros.git
+- git:
+    local-name: ocs2_dev
+    uri: git@bitbucket.org:leggedrobotics/ocs2_dev.git
+    version: '8.0'
+- git:
+    local-name: parameter_handler
+    uri: https://github.com/leggedrobotics/parameter_handler.git
+- git:
+    local-name: protobuf_catkin
+    uri: https://github.com/ethz-asl/protobuf_catkin.git
+- git:
+    local-name: robot_utils
+    uri: git@bitbucket.org:leggedrobotics/robot_utils.git
+- git:
+    local-name: roco
+    uri: https://bitbucket.org/leggedrobotics/roco.git
+- git:
+    local-name: rocoma
+    uri: https://github.com/leggedrobotics/rocoma.git
+- git:
+    local-name: rocoma_rqt
+    uri: git@bitbucket.org:leggedrobotics/rocoma_rqt.git
+- git:
+    local-name: romo
+    uri: git@bitbucket.org:leggedrobotics/romo.git
+- git:
+    local-name: signal_logger
+    uri: https://github.com/leggedrobotics/signal_logger.git
+- git:
+    local-name: smb_common
+    uri: git@bitbucket.org:leggedrobotics/smb_common.git
+    version: master
+- git:
+    local-name: smb_confusor
+    uri: git@bitbucket.org:leggedrobotics/smb_confusor.git
+- git:
+    local-name: smb_highlevel_controller
+    uri: git@bitbucket.org:leggedrobotics/smb_highlevel_controller.git
+- git:
+    local-name: smb_lowlevel_controller
+    uri: git@bitbucket.org:leggedrobotics/smb_lowlevel_controller.git
+- git:
+    local-name: smb_path_planner
+    uri: https://github.com/VIS4ROB-lab/smb_path_planner.git
+    version: feature/ros_nav_stack
+- git:
+    local-name: smb_state_estimator
+    uri: git@bitbucket.org:leggedrobotics/smb_state_estimator.git
+- git:
+    local-name: state_estimation
+    uri: git@bitbucket.org:leggedrobotics/state_estimation.git
+- git:
+    local-name: suitesparse
+    uri: https://github.com/ethz-asl/suitesparse.git
+- git:
+    local-name: user_interface
+    uri: git@bitbucket.org:leggedrobotics/user_interface.git
