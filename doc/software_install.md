@@ -14,7 +14,7 @@ Send your account details (username and associated email adress) to Johannes fro
 We follow the same procedure as for the RSS2019.
 Create a new catkin workspace.
 ```
-mkdir -p ~/smb2_0_catkin_ws/src
+mkdir -p ~/smb_2_0_catkin_ws/src
 cd ~/smb_2_0_catkin_ws
 catkin init
 catkin config --extend /opt/ros/melodic
