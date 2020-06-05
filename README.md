@@ -12,3 +12,4 @@ See https://github.com/ethz-asl/eth_supermegabot
 Major revision, software and hardware wise.
 
 To set up the new software on your personal computer (for simulation), check out the [installation documentation](doc/software_install.md).
+Details on how to run the simulation are given in the [path planner repo (branch feature/ros_nav_stack)](https://github.com/VIS4ROB-lab/smb_path_planner/tree/feature/ros_nav_stack)
