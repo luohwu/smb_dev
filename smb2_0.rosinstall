@@ -131,5 +131,8 @@
     local-name: suitesparse
     uri: https://github.com/ethz-asl/suitesparse.git
 - git:
+   local-name: traversability_estimation
+   uri: https://github.com/leggedrobotics/traversability_estimation.git
+- git:
     local-name: user_interface
     uri: git@bitbucket.org:leggedrobotics/user_interface.git
