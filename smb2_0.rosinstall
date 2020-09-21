@@ -42,6 +42,10 @@
    uri: https://github.com/ethz-asl/ethzasl_icp_mapping.git
    version: supermegabot
 - git:
+    local-name: flir_camera_driver
+    uri: git@github.com:ethz-asl/flir_camera_driver.git
+    version: devel/versavis
+- git:
     local-name: gflags_catkin
     uri: https://github.com/ethz-asl/gflags_catkin.git
 - git:
@@ -57,12 +61,12 @@
     local-name: kindr_ros
     uri: https://github.com/leggedrobotics/kindr_ros.git
 - git:
-   local-name: libnabo
-   uri: https://github.com/ethz-asl/libnabo.git
-   version: 1.0.7
+    local-name: libnabo
+    uri: https://github.com/ethz-asl/libnabo.git
+    version: 1.0.7
 - git:
-   local-name: libpointmatcher
-   uri: https://github.com/ethz-asl/libpointmatcher.git
+    local-name: libpointmatcher
+    uri: https://github.com/ethz-asl/libpointmatcher.git
 - git:
     local-name: message_logger
     uri: https://github.com/leggedrobotics/message_logger.git
@@ -98,6 +102,9 @@
     local-name: romo
     uri: git@bitbucket.org:leggedrobotics/romo.git
 - git:
+   local-name: ros_rslidar
+   uri: https://github.com/RoboSense-LiDAR/ros_rslidar.git
+- git:
     local-name: signal_logger
     uri: https://github.com/leggedrobotics/signal_logger.git
 - git:
@@ -122,6 +129,9 @@
     uri: git@github.com:leggedrobotics/teb_local_planner.git
     version: feature/correct_local_plan_timestamps
 - git:
+   local-name: traversability_estimation
+   uri: https://github.com/leggedrobotics/traversability_estimation.git
+- git:
     local-name: smb_state_estimator
     uri: git@bitbucket.org:leggedrobotics/smb_state_estimator.git
 - git:
@@ -136,6 +146,9 @@
 - git:
     local-name: user_interface
     uri: git@bitbucket.org:leggedrobotics/user_interface.git
+- git:
+    local-name: versavis
+    uri: git@github.com:ethz-asl/versavis.git
 - git:
     local-name: voxblox
     uri: https://github.com/ethz-asl/voxblox.git
