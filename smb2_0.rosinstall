@@ -98,6 +98,9 @@
     local-name: romo
     uri: git@bitbucket.org:leggedrobotics/romo.git
 - git:
+   local-name: ros_rslidar
+   uri: https://github.com/RoboSense-LiDAR/ros_rslidar.git
+- git:
     local-name: signal_logger
     uri: https://github.com/leggedrobotics/signal_logger.git
 - git:
