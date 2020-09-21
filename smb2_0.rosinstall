@@ -38,6 +38,10 @@
     local-name: elevation_mapping
     uri: https://github.com/leggedrobotics/elevation_mapping.git
 - git:
+   local-name: ethzasl_icp_mapping
+   uri: https://github.com/ethz-asl/ethzasl_icp_mapping.git
+   version: supermegabot
+- git:
     local-name: gflags_catkin
     uri: https://github.com/ethz-asl/gflags_catkin.git
 - git:
@@ -52,6 +56,13 @@
 - git:
     local-name: kindr_ros
     uri: https://github.com/leggedrobotics/kindr_ros.git
+- git:
+   local-name: libnabo
+   uri: https://github.com/ethz-asl/libnabo.git
+   version: 1.0.7
+- git:
+   local-name: libpointmatcher
+   uri: https://github.com/ethz-asl/libpointmatcher.git
 - git:
     local-name: message_logger
     uri: https://github.com/leggedrobotics/message_logger.git
