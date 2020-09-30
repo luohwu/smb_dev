@@ -6,6 +6,14 @@ Similar to the [software for the RSS 2019](https://github.com/ethz-asl/eth_super
 Unfortunately, there is no list yet. Installing the dependencies from 2019 is a good starting point.
 
 The SMB software runs on ROS melodic, check the [offical instructions](http://wiki.ros.org/melodic/Installation/Ubuntu) on how to set up ROS.
+Make sure the ROS packages `hector_gazebo_plugins`, `joy`, `costmap_2d`, and `ompl` are installed:
+```
+sudo apt-get install ros-melodic-hector-gazebo-plugins ros-melodic-joy ros-melodic-costmap-2d ros-melodic-ompl
+```
+Installation of `GLPK` is also required:
+```
+sudo apt install libglpk-dev
+```
 
 For some of the core software packages, you'll need to be granted access by the RSL. These repositories are hosted on bitbucket, thus you'll need a bitbucket (Atlassian) account. 
 Send your account details (username and associated email adress) to Johannes from RSL and ask for permission to access the RSS related SMB repositories.
