@@ -122,3 +122,6 @@
 - git:
     local-name: user_interface
     uri: git@bitbucket.org:leggedrobotics/user_interface.git
+- git:
+    local-name: point_cloud_processing
+    uri: git@bitbucket.org:leggedrobotics/point_cloud_processing.git
