@@ -125,3 +125,6 @@
 - git:
     local-name: point_cloud_processing
     uri: git@bitbucket.org:leggedrobotics/point_cloud_processing.git
+- git:
+    local-name: development
+    uri: git@bitbucket.org:leggedrobotics/development.git
