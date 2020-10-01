@@ -97,9 +97,6 @@
     local-name: smb_confusor
     uri: git@bitbucket.org:leggedrobotics/smb_confusor.git
 - git:
-    local-name: smb_highlevel_controller
-    uri: git@bitbucket.org:leggedrobotics/smb_highlevel_controller.git
-- git:
     local-name: smb_lowlevel_controller
     uri: git@bitbucket.org:leggedrobotics/smb_lowlevel_controller.git
 - git:
