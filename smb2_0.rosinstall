@@ -116,9 +116,6 @@
     local-name: smb_confusor
     uri: git@bitbucket.org:leggedrobotics/smb_confusor.git
 - git:
-    local-name: smb_highlevel_controller
-    uri: git@bitbucket.org:leggedrobotics/smb_highlevel_controller.git
-- git:
     local-name: smb_lowlevel_controller
     uri: git@bitbucket.org:leggedrobotics/smb_lowlevel_controller.git
 - git:
@@ -153,3 +150,9 @@
 - git:
     local-name: voxblox
     uri: https://github.com/ethz-asl/voxblox.git
+- git:
+    local-name: point_cloud_processing
+    uri: git@bitbucket.org:leggedrobotics/point_cloud_processing.git
+- git:
+    local-name: development
+    uri: git@bitbucket.org:leggedrobotics/development.git
