@@ -1,0 +1,10 @@
+- git:
+    local-name: flir_camera_driver
+    uri: https://github.com/ethz-asl/flir_camera_driver.git
+    version: devel/versavis
+- git:
+    local-name: ros_rslidar
+    uri: https://github.com/RoboSense-LiDAR/ros_rslidar.git
+- git:
+    local-name: versavis
+    uri: https://github.com/ethz-asl/versavis.git
