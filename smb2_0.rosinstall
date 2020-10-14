@@ -63,11 +63,11 @@
 - git:
     local-name: libnabo
     uri: https://github.com/ethz-asl/libnabo.git
-    version: 1.0.7
+    version: master
 - git:
     local-name: libpointmatcher
     uri: https://github.com/ethz-asl/libpointmatcher.git
-    version: aa6c265a765ae2130decb3ea4b7e4134308432dd
+    version: master
 - git:
     local-name: message_logger
     uri: https://github.com/leggedrobotics/message_logger.git
@@ -150,9 +150,6 @@
 - git:
     local-name: voxblox
     uri: https://github.com/ethz-asl/voxblox.git
-- git:
-    local-name: point_cloud_processing
-    uri: git@bitbucket.org:leggedrobotics/point_cloud_processing.git
 - git:
     local-name: development
     uri: git@bitbucket.org:leggedrobotics/development.git
