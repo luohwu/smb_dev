@@ -3,6 +3,10 @@
     uri: https://github.com/ethz-asl/flir_camera_driver.git
     version: devel/versavis
 - git:
+    local-name: realsense-ros
+    uri: https://github.com/IntelRealSense/realsense-ros.git
+    version: 2.2.17
+- git:
     local-name: ros_rslidar
     uri: https://github.com/RoboSense-LiDAR/ros_rslidar.git
 - git:
