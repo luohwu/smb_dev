@@ -87,7 +87,7 @@
 - git:
     local-name: parameter_handler
     uri: https://github.com/leggedrobotics/parameter_handler.git
--git:
+- git:
     local-name: point_cloud_processing
     uri: git@bitbucket.org:leggedrobotics/point_cloud_processing.git
 - git:
@@ -149,6 +149,7 @@
     uri: git@bitbucket.org:leggedrobotics/user_interface.git
 - git:
     local-name: versavis
+    uri: https://github.com/ethz-asl/versavis.git
     uri: git@github.com:ethz-asl/versavis.git
 - git:
     local-name: voxblox
