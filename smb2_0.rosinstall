@@ -29,6 +29,9 @@
     local-name: cosmo
     uri: git@bitbucket.org:leggedrobotics/cosmo.git
 - git:
+    local-name: development
+    uri: git@bitbucket.org:leggedrobotics/development.git
+- git:
     local-name: eigen_catkin
     uri: https://github.com/ethz-asl/eigen_catkin.git
 - git:
@@ -83,6 +86,9 @@
 - git:
     local-name: parameter_handler
     uri: https://github.com/leggedrobotics/parameter_handler.git
+-git:
+    local-name: point_cloud_processing
+    uri: git@bitbucket.org:leggedrobotics/point_cloud_processing.git
 - git:
     local-name: protobuf_catkin
     uri: https://github.com/ethz-asl/protobuf_catkin.git
@@ -115,9 +121,6 @@
     local-name: smb_confusor
     uri: git@bitbucket.org:leggedrobotics/smb_confusor.git
 - git:
-    local-name: smb_highlevel_controller
-    uri: git@bitbucket.org:leggedrobotics/smb_highlevel_controller.git
-- git:
     local-name: smb_lowlevel_controller
     uri: git@bitbucket.org:leggedrobotics/smb_lowlevel_controller.git
 - git:
@@ -149,3 +152,4 @@
 - git:
     local-name: voxblox
     uri: https://github.com/ethz-asl/voxblox.git
+
