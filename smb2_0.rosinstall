@@ -70,6 +70,7 @@
 - git:
     local-name: libpointmatcher
     uri: https://github.com/ethz-asl/libpointmatcher.git
+    version: aa6c265a765ae2130decb3ea4b7e4134308432dd
 - git:
     local-name: message_logger
     uri: https://github.com/leggedrobotics/message_logger.git
@@ -152,4 +153,3 @@
 - git:
     local-name: voxblox
     uri: https://github.com/ethz-asl/voxblox.git
-
