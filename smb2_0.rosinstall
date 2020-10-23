@@ -66,11 +66,11 @@
 - git:
     local-name: libnabo
     uri: https://github.com/ethz-asl/libnabo.git
-    version: 1.0.7
+    version: master
 - git:
     local-name: libpointmatcher
     uri: https://github.com/ethz-asl/libpointmatcher.git
-    version: aa6c265a765ae2130decb3ea4b7e4134308432dd
+    version: master
 - git:
     local-name: message_logger
     uri: https://github.com/leggedrobotics/message_logger.git
@@ -127,7 +127,7 @@
 - git:
     local-name: smb_path_planner
     uri: git@github.com:VIS4ROB-lab/smb_path_planner.git
-    version: feature/ros_nav_stack
+    version: master
 - git:
     local-name: smb_state_estimator
     uri: git@bitbucket.org:leggedrobotics/smb_state_estimator.git
