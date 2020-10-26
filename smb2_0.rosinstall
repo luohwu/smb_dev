@@ -45,10 +45,6 @@
    uri: https://github.com/ethz-asl/ethzasl_icp_mapping.git
    version: supermegabot
 - git:
-    local-name: flir_camera_driver
-    uri: git@github.com:ethz-asl/flir_camera_driver.git
-    version: devel/versavis
-- git:
     local-name: gflags_catkin
     uri: https://github.com/ethz-asl/gflags_catkin.git
 - git:
@@ -88,9 +84,6 @@
     local-name: parameter_handler
     uri: https://github.com/leggedrobotics/parameter_handler.git
 - git:
-    local-name: point_cloud_processing
-    uri: git@bitbucket.org:leggedrobotics/point_cloud_processing.git
-- git:
     local-name: protobuf_catkin
     uri: https://github.com/ethz-asl/protobuf_catkin.git
 - git:
@@ -108,9 +101,6 @@
 - git:
     local-name: romo
     uri: git@bitbucket.org:leggedrobotics/romo.git
-- git:
-   local-name: ros_rslidar
-   uri: https://github.com/RoboSense-LiDAR/ros_rslidar.git
 - git:
     local-name: signal_logger
     uri: https://github.com/leggedrobotics/signal_logger.git
@@ -147,10 +137,6 @@
 - git:
     local-name: user_interface
     uri: git@bitbucket.org:leggedrobotics/user_interface.git
-- git:
-    local-name: versavis
-    uri: https://github.com/ethz-asl/versavis.git
-    uri: git@github.com:ethz-asl/versavis.git
 - git:
     local-name: voxblox
     uri: https://github.com/ethz-asl/voxblox.git
