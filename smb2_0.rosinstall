@@ -87,6 +87,10 @@
     local-name: protobuf_catkin
     uri: https://github.com/ethz-asl/protobuf_catkin.git
 - git:
+    local-name: realsense-ros
+    uri: https://github.com/IntelRealSense/realsense-ros.git
+    version: 2.2.18
+- git:
     local-name: robot_utils
     uri: git@bitbucket.org:leggedrobotics/robot_utils.git
 - git:
