@@ -8,9 +8,7 @@
   <url type="website">http://github.com/ethz-robotx/smb_dev</url>
   <author email="thomas.mantel@mavt.ethz.ch">Thomas Mantel</author>
 
-
   <buildtool_depend>catkin</buildtool_depend>
-
   <exec_depend>flir_camera_driver</exec_depend> 
   <exec_depend>versavis</exec_depend>
   <exec_depend>realsense2_camera</exec_depend>
