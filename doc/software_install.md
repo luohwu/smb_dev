@@ -61,3 +61,8 @@ If you're only interested in running the simulation, you can run
 ```bash
 catkin build smb_sim smb_path_planner
 ```
+
+If you would like to run the everything on the real robot, you'can execute the following command instead:
+```bash
+catkin build smb_sensors smb_navigation smb_lpc
+```
