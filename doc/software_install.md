@@ -42,14 +42,14 @@ catkin config -DCMAKE_BUILD_TYPE=Release
 Using wstool you can manage the packages in your workspace. For that you'll need to get the .rosinstall file within this repository.
 ```bash
 cd ~/smb_2_0_catkin_ws/src
-git clone git@github.com:ETHZ-RobotX/SMB_dev.git
+git clone git@github.com:ETHZ-RobotX/smb_dev.git
 wstool init
-wstool merge SMB_dev/smb2_0.rosinstall
+wstool merge smb_dev/smb2_0.rosinstall
 ```
 
 If you're running the software on the robot, you'll need to add some more packages.
 ```bash
-wstool merge SMB_dev/smb2_0_hw.rosinstall  
+wstool merge smb_dev/smb2_0_hw.rosinstall  
 ```
 
 Once you added all packages, you need to actually download them from the repositories:
