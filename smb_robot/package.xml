@@ -6,7 +6,7 @@
 
   <maintainer email="thomas.mantel@mavt.ethz.ch">Thomas Mantel</maintainer>
   <license>GPLv3</license>
-  <url type="website">http://www.github.com/ETHZ-RobotX/SMB_dev</url>
+  <url type="website">http://www.github.com/ETHZ-RobotX/smb_dev</url>
   <author email="thomas.mantel@mavt.ethz.ch">Thomas Mantel</author>
 
   <buildtool_depend>catkin</buildtool_depend>
