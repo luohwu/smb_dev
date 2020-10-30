@@ -11,7 +11,7 @@
 
   <buildtool_depend>catkin</buildtool_depend>
   <exec_depend>smb_lpc</exec_depend>
-  <exec_depend>smb_navigation</exec_depend>
+  <exec_depend>smb_path_planner</exec_depend>
   <exec_depend>smb_sensors</exec_depend>
 
   <export>
