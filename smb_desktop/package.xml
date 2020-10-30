@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>smb_desktop</name>
+  <version>0.0.1</version>
+  <description>This package collects SMB components that are used to run the SMB simulation on a desktop computer/notebook.</description>
+
+  <maintainer email="thomas.mantel@mavt.ethz.ch">Thomas Mantel</maintainer>
+  <license>GPLv3</license>
+  <url type="website">http://www.github.com/ETHZ-RobotX/SMB_dev</url>
+  <author email="thomas.mantel@mavt.ethz.ch">Thomas Mantel</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <exec_depend>smb_opc</exec_depend>
+  <exec_depend>smb_navigation</exec_depend>
+  <exec_depend>smb_sim</exec_depend>
+
+  <export>
+    <metapackage/>
+  </export>
+</package>
