@@ -23,6 +23,11 @@ sudo apt-get update
 sudo apt-get install librealsense2-utils librealsense2-dkms librealsense2-dev
 ```
 
+The realsense-ros packages depend on the `ddynamic_reconfigure` package. You can install it using the package manager:
+```bash
+sudo apt-get install ros-melodic-ddynamic-reconfigure
+```
+
 ### Closed source packages
 For some of the core software packages, you'll need to be granted access by the RSL. These repositories are hosted on bitbucket, thus you'll need a bitbucket (Atlassian) account. 
 Send your account details (username and associated email address) to [Johannes from RSL](https://rsl.ethz.ch/the-lab/people/person-detail.MjU0MDk1.TGlzdC8yNDQyLC0xNDI1MTk1NzM1.html) and ask for permission to access the RSS related SMB repositories.
