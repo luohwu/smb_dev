@@ -8,7 +8,7 @@ Unfortunately, there is no list yet. Installing the dependencies from 2019 is a 
 The SMB software runs on ROS melodic, check the [offical instructions](http://wiki.ros.org/melodic/Installation/Ubuntu) on how to set up ROS.
 Make sure that the following ROS packages are installed:
 ```bash
-sudo apt-get install ros-melodic-hector-gazebo-plugins ros-melodic-joy ros-melodic-costmap-2d ros-melodic-ompl ros-melodic-base-local-planner ros-melodic-costmap-converter ros-melodic-mbf-costmap-core ros-melodic-mbf-msgs ros-melodic-libg2o ros-melodic-navfn ros-melodic-move-base
+sudo apt install ros-melodic-hector-gazebo-plugins ros-melodic-joy ros-melodic-costmap-2d ros-melodic-ompl ros-melodic-base-local-planner ros-melodic-costmap-converter ros-melodic-mbf-costmap-core ros-melodic-mbf-msgs ros-melodic-libg2o ros-melodic-navfn ros-melodic-move-base python-catkin-tools python3-vcstool
 ```
 Installation of `GLPK` is also required:
 ```bash
@@ -25,7 +25,7 @@ sudo apt-get install librealsense2-utils librealsense2-dkms librealsense2-dev
 
 The realsense-ros packages depend on the `ddynamic_reconfigure` package. You can install it using the package manager:
 ```bash
-sudo apt-get install ros-melodic-ddynamic-reconfigure
+sudo apt install ros-melodic-ddynamic-reconfigure
 ```
 
 ### Closed source packages
@@ -40,26 +40,20 @@ mkdir -p ~/smb_2_0_catkin_ws/src
 cd ~/smb_2_0_catkin_ws
 catkin init
 catkin config --extend /opt/ros/melodic
-catkin config --merge-devel
 catkin config -DCMAKE_BUILD_TYPE=Release
 ```
 
-Using wstool you can manage the packages in your workspace. For that you'll need to get the .rosinstall file within this repository.
+Using vcstool you can manage the packages in your workspace. For that you'll need to get the .rosinstall file within this repository.
 ```bash
 cd ~/smb_2_0_catkin_ws/src
 git clone git@github.com:ETHZ-RobotX/smb_dev.git
-wstool init
+vcstool import . < smb_dev/smb2_0.rosinstall
 wstool merge smb_dev/smb2_0.rosinstall
 ```
 
 If you're running the software on the robot, you'll need to add some more packages.
 ```bash
-wstool merge smb_dev/smb2_0_hw.rosinstall  
-```
-
-Once you added all packages, you need to actually download them from the repositories:
-```bash
-wstool up -j8
+vcstool import . < smb_dev/smb2_0_hw.rosinstall  
 ```
 
 If you're only interested in running the simulation, you can run
