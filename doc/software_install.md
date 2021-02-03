@@ -48,7 +48,6 @@ Using vcstool you can manage the packages in your workspace. For that you'll nee
 cd ~/smb_2_0_catkin_ws/src
 git clone git@github.com:ETHZ-RobotX/smb_dev.git
 vcstool import . < smb_dev/smb2_0.rosinstall
-wstool merge smb_dev/smb2_0.rosinstall
 ```
 
 If you're running the software on the robot, you'll need to add some more packages.
