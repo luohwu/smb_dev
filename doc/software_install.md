@@ -8,7 +8,7 @@ Unfortunately, there is no list yet. Installing the dependencies from 2019 is a 
 The SMB software runs on ROS melodic, check the [offical instructions](http://wiki.ros.org/melodic/Installation/Ubuntu) on how to set up ROS.
 Make sure that the following ROS packages are installed:
 ```bash
-sudo apt install ros-melodic-hector-gazebo-plugins ros-melodic-joy ros-melodic-costmap-2d ros-melodic-ompl ros-melodic-base-local-planner ros-melodic-costmap-converter ros-melodic-mbf-costmap-core ros-melodic-mbf-msgs ros-melodic-libg2o ros-melodic-navfn ros-melodic-move-base python-catkin-tools python3-vcstool
+sudo apt install ros-melodic-hector-gazebo-plugins ros-melodic-joy ros-melodic-costmap-2d ros-melodic-ompl ros-melodic-base-local-planner ros-melodic-costmap-converter ros-melodic-mbf-costmap-core ros-melodic-mbf-msgs ros-melodic-libg2o ros-melodic-navfn ros-melodic-move-base python-catkin-tools python3-vcstool ros-melodic-velodyne-simulator
 ```
 Installation of `GLPK` is also required:
 ```bash
