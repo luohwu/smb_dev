@@ -79,7 +79,7 @@
 - git:
     local-name: ocs2_dev
     uri: git@bitbucket.org:leggedrobotics/ocs2_dev.git
-    version: '8.0'
+    version: 'mabi_16_04_21'
 - git:
     local-name: parameter_handler
     uri: https://github.com/leggedrobotics/parameter_handler.git
