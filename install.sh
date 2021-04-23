@@ -62,7 +62,7 @@ catkin config -DCMAKE_BUILD_TYPE=Release
 
 echo "Downloading necessary 3rd party packages"
 cd src
-git clone --branch refactor/purging git@github.com:ETHZ-RobotX/smb_dev.git
+git clone --branch refactor/purging https://github.com/ETHZ-RobotX/smb_dev.git
 vcs import . < smb_dev/smb_purged.rosinstall
 
 
