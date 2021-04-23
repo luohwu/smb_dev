@@ -1,10 +1,10 @@
 - git:
     local-name: smb_common
-    uri: git@bitbucket.org:leggedrobotics/smb_common.git
+    uri: https://bitbucket.org/leggedrobotics/smb_common.git
     version: dev/ros_control
 - git:
     local-name: smb_lowlevel_controller
-    uri: git@bitbucket.org:leggedrobotics/smb_lowlevel_controller.git
+    uri: https://bitbucket.org/leggedrobotics/smb_lowlevel_controller.git
     version: refactor/ros_control
 - git:
     local-name: message_logger
