@@ -11,6 +11,6 @@
     uri: https://github.com/leggedrobotics/message_logger.git
 - git:
     local-name: robosense
-    uri: https://github.com/tomlogan501/robosense_simulator
-
-    
+    uri: https://github.com/ETHZ-RobotX/rslidar_sdk.git
+    version: supermegabot
+   
