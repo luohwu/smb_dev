@@ -1,0 +1,24 @@
+- git:
+    local-name: smb_common
+    uri: https://bitbucket.org/leggedrobotics/smb_common.git
+    version: dev/ros_control
+- git:
+    local-name: smb_lowlevel_controller
+    uri: https://bitbucket.org/leggedrobotics/smb_lowlevel_controller.git
+    version: refactor/ros_control
+- git:
+    local-name: message_logger
+    uri: https://github.com/leggedrobotics/message_logger.git
+- git:
+    local-name: robosense
+    uri: https://github.com/ETHZ-RobotX/rslidar_sdk.git
+    version: supermegabot
+- git: 
+    local-name: versavis
+    uri: https://github.com/ethz-asl/versavis.git
+    version: test/upstream_rosserial
+- git: 
+    local-name: flir_camera
+    uri: https://github.com/ethz-asl/flir_camera_driver.git
+
+
