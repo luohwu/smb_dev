@@ -88,4 +88,9 @@ git clone --branch refactor/purging https://github.com/ETHZ-RobotX/smb_dev.git
 vcs import . < smb_dev/smb_purged.rosinstall
 
 
+# these will be removed 
+git clone --branch dev/ros_control https://bitbucket.org/leggedrobotics/smb_common.git
+
+git clone --branch refactor/ros_control https://bitbucket.org/leggedrobotics/smb_lowlevel_controller.git
+
 
