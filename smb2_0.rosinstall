@@ -43,7 +43,7 @@
 - git:
    local-name: ethzasl_icp_mapping
    uri: https://github.com/ethz-asl/ethzasl_icp_mapping.git
-   version: supermegabot
+   version: dev/noetic
 - git:
     local-name: gflags_catkin
     uri: https://github.com/ethz-asl/gflags_catkin.git
