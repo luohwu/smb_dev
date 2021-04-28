@@ -45,7 +45,7 @@ echo "Creating ROS workspace"
 mkdir -p ~/catkin_WS/src
 cd ~/catkin_WS
 catkin init
-catkin config --extend /opt/ros/melodic
+catkin config --extend /opt/ros/noetic
 catkin config -DCMAKE_BUILD_TYPE=Release
 
 echo "Downloading necessary 3rd party packages"
@@ -56,5 +56,5 @@ vcs import . < smb_dev/smb_purged_sim.rosinstall
 # these will be removed 
 git clone --branch dev/ros_control https://bitbucket.org/leggedrobotics/smb_common.git
 
-git clone --branch refactor/ros_control https://bitbucket.org/leggedrobotics/smb_lowlevel_controller.git
+git clone --branch dev/effort_control  https://bitbucket.org/leggedrobotics/smb_lowlevel_controller.git
 
