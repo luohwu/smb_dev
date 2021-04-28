@@ -1,5 +1,5 @@
 #!/bin/bash
-#install.sh
+#setup_sim.sh
 
 
 while true; do
@@ -38,12 +38,6 @@ read -p "Necessary official ROS packages will be installed. Press enter to conti
 
 sudo apt-get install -y ros-noetic-hector-gazebo-plugins ros-noetic-controller-manager ros-noetic-joint-state-controller ros-noetic-gazebo-plugins ros-noetic-transmission-interface ros-noetic-joint-limits-interface ros-noetic-joint-limits-interface ros-noetic-pointcloud-to-laserscan ros-noetic-twist-mux ros-noetic-perception-pcl ros-noetic-ros-control ros-noetic-gazebo-ros-control ros-noetic-cmake-modules ros-noetic-xacro ros-noetic-robot-state-publisher python3-catkin-tools python3-osrf-pycommon
 
-
-# Necessary libraries for drivers 
-read -p "Installing necessary libraries for RoboSense. Press enter to continue..."
-sudo apt-get install -y libyaml-cpp-dev libpcap-dev libprotobuf-dev protobuf-compiler git
-
-
 cd $HOME
 
 
@@ -57,7 +51,7 @@ catkin config -DCMAKE_BUILD_TYPE=Release
 echo "Downloading necessary 3rd party packages"
 cd src
 git clone --branch refactor/purging https://github.com/ETHZ-RobotX/smb_dev.git
-vcs import . < smb_dev/smb_purged.rosinstall
+vcs import . < smb_dev/smb_purged_sim.rosinstall
 
 # these will be removed 
 git clone --branch dev/ros_control https://bitbucket.org/leggedrobotics/smb_common.git
