@@ -1,7 +1,16 @@
 #!/bin/bash
 #setup_sim.sh
 
+# Color codes
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+BLUE='\033[0;34m'
+PURPLE='\033[0;35m'
+CYAN='\033[0;36m'
+NC='\033[0m'
 
+
+# ROS installation query
 while true; do
     read -p "Do you have ROS-Noetic-Desktop in your system? : " yn
     case $yn in
@@ -32,21 +41,49 @@ while true; do
     esac
 done
 
+echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+
 	
 # Necessary packages of ROS
 read -p "Necessary official ROS packages will be installed. Press enter to continue..."
 
 sudo apt-get install -y ros-noetic-hector-gazebo-plugins ros-noetic-controller-manager ros-noetic-joint-state-controller ros-noetic-gazebo-plugins ros-noetic-transmission-interface ros-noetic-joint-limits-interface ros-noetic-joint-limits-interface ros-noetic-pointcloud-to-laserscan ros-noetic-twist-mux ros-noetic-perception-pcl ros-noetic-ros-control ros-noetic-gazebo-ros-control ros-noetic-cmake-modules ros-noetic-xacro ros-noetic-robot-state-publisher python3-catkin-tools python3-osrf-pycommon
 
-cd $HOME
 
+# Catkin Workspace creation. User input
+echo "Creating a catkin workspace directory under HOME directory."
+echo "For the default name press enter directly. default = catkin_ws "
+echo -e "${CYAN} IMPORTANT: directory with the same name will be deleted ${NC}"
+read -p "Please type in the name of the catkin workspace directory:" WORKSPACE_NAME
 
-echo "Creating ROS workspace"
-mkdir -p ~/catkin_WS/src
-cd ~/catkin_WS
+# Default naming
+if [ "$WORKSPACE_NAME" == "" ]; then
+	
+	WORKSPACE_NAME='catkin_ws'
+fi
+
+# Check if the directory name is already exist.
+if [ -d ""$HOME"/"$WORKSPACE_NAME"" ]; then
+	
+	echo "A directory with the name '$WORKSPACE_NAME' already exists. It will be deleted."
+	read -p "Press enter to continue..."
+	sudo rm -R ~/$WORKSPACE_NAME
+	
+fi
+
+# Create the directory and initilize the catkin ws
+echo "Creating ROS workspace with the name '$WORKSPACE_NAME'"
+mkdir -p ~/$WORKSPACE_NAME/src
+cd ~/$WORKSPACE_NAME
 catkin init
 catkin config --extend /opt/ros/noetic
 catkin config -DCMAKE_BUILD_TYPE=Release
+
+# For later setup_hw.sh
+echo "WORKSPACE_NAME_CATKIN='$WORKSPACE_NAME' " >> ~/.bashrc
+sorce ~/.bashrc
+
 
 echo "Downloading necessary 3rd party packages"
 cd src
@@ -57,4 +94,8 @@ vcs import . < smb_dev/smb_purged_sim.rosinstall
 git clone --branch dev/ros_control_sensor_merge https://bitbucket.org/leggedrobotics/smb_common.git
 
 git clone --branch dev/effort_control  https://bitbucket.org/leggedrobotics/smb_lowlevel_controller.git
+
+# Build the packages
+cd $HOME/$WORKSPACE_NAME_CATKIN
+catkin build 
 

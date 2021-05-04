@@ -8,20 +8,22 @@ sudo apt-get install -y libyaml-cpp-dev libpcap-dev libprotobuf-dev protobuf-com
 # Flir Camera driver install
 read -p "Installing driver of The RGB camera is a FLIR Blackfly S BFS-U3-16S2C. Press enter to continue..."
 
-cd $HOME
-cd ~/catkin_WS/src/smb_dev/drivers
+
+cd $HOME/$WORKSPACE_NAME_CATKIN/src/smb_dev/drivers
 
 tar -xvf spinnaker-2.4.0.143-Ubuntu20.04-amd64-pkg.tar.gz 
-
 rm spinnaker-2.4.0.143-Ubuntu20.04-amd64-pkg.tar.gz 
+cd spinnaker-2.4.0.143-amd64/
+sudo dpkg -i libgentl_2.4.0.143_amd64.deb libspinnaker_2.4.0.143_amd64.deb libspinnaker-dev_2.4.0.143_amd64.deb libspinnaker-c_2.4.0.143_amd64.deb libspinnaker-c-dev_2.4.0.143_amd64.deb
+rm -R spinnaker-2.4.0.143-amd64
 
-cd spinnaker-2.4.0.143-arm64/
-
-sudo dpkg  -i libgentl_2.4.0.143_amd64.deb libspinnaker_2.4.0.143_amd64.deb libspinnaker-dev_2.4.0.143_amd64.deb libspinnaker-c_2.4.0.143_amd64.deb libspinnaker-c-dev_2.4.0.143_amd64.deb
-
-cd $HOME/catkin_WS/src
+cd $HOME/$WORKSPACE_NAME_CATKIN/src
 
 echo "Downloading packages of sensors"
 vcs import . < smb_dev/smb_purged_hw.rosinstall
+
+cd $HOME/$WORKSPACE_NAME_CATKIN
+catkin build 
+
 
 
