@@ -9,5 +9,10 @@
 - git: 
     local-name: flir_camera
     uri: https://github.com/ethz-asl/flir_camera_driver.git
+- git: 
+    local-name: realsense
+    uri: https://github.com/IntelRealSense/realsense-ros.git
+    version: 2.2.24
+
 
 
