@@ -3,7 +3,7 @@
 
 # Setting up the SMB software
 ## Prerequisites
-Ubuntu20.04.
+Ubuntu 20.04
 
 ### Closed source packages
 
