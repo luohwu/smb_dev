@@ -48,8 +48,9 @@ source ~/.bashrc
 # Necessary packages of ROS
 read -p "Necessary official ROS packages will be installed. Press enter to continue..."
 
- apt-get install -y ros-noetic-hector-gazebo-plugins ros-noetic-controller-manager ros-noetic-joint-state-controller ros-noetic-gazebo-plugins ros-noetic-transmission-interface ros-noetic-joint-limits-interface ros-noetic-joint-limits-interface ros-noetic-pointcloud-to-laserscan ros-noetic-twist-mux ros-noetic-perception-pcl ros-noetic-ros-control ros-noetic-gazebo-ros-control ros-noetic-cmake-modules ros-noetic-xacro ros-noetic-robot-state-publisher python3-catkin-tools python3-osrf-pycommon
+apt-get install -y ros-noetic-hector-gazebo-plugins ros-noetic-controller-manager ros-noetic-joint-state-controller ros-noetic-gazebo-plugins ros-noetic-transmission-interface ros-noetic-joint-limits-interface ros-noetic-joint-limits-interface ros-noetic-pointcloud-to-laserscan ros-noetic-twist-mux ros-noetic-perception-pcl ros-noetic-ros-control ros-noetic-gazebo-ros-control ros-noetic-cmake-modules ros-noetic-xacro ros-noetic-robot-state-publisher python3-catkin-tools python3-osrf-pycommon git python3-pip
 
+pip3 vcstool
 
 # Catkin Workspace creation. User input
 echo "Creating a catkin workspace directory under HOME directory."
@@ -88,7 +89,7 @@ source ~/.bashrc
 echo "Downloading necessary 3rd party packages"
 cd ~/$WORKSPACE_NAME/src
 git clone --branch refactor/purging https://github.com/ETHZ-RobotX/smb_dev.git
-vcs import . < ~/$WORKSPACE_NAME/srcsmb_dev/smb_purged_sim.rosinstall
+vcs import . < ~/$WORKSPACE_NAME/src/smb_dev/smb_sim.rosinstall
 
 # these will be removed 
 git clone --branch dev/ros_control https://bitbucket.org/leggedrobotics/smb_common.git
