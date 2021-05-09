@@ -82,11 +82,11 @@ catkin config -DCMAKE_BUILD_TYPE=Release
 
 # For later setup_hw.sh
 echo "WORKSPACE_NAME_CATKIN='$WORKSPACE_NAME' " >> ~/.bashrc
-sorce ~/.bashrc
+source ~/.bashrc
 
 
 echo "Downloading necessary 3rd party packages"
-cd src
+cd ~/$WORKSPACE_NAME/src
 git clone --branch refactor/purging https://github.com/ETHZ-RobotX/smb_dev.git
 vcs import . < smb_dev/smb_purged_sim.rosinstall
 
