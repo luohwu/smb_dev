@@ -1,6 +1,9 @@
-- git:
-    local-name: message_logger
-    uri: https://github.com/leggedrobotics/message_logger.git
-- git:
-    local-name: robosense
-    uri: https://github.com/tomlogan501/robosense_simulator
+repositories:
+  ocs2_dev:
+    type: git
+    url: git@bitbucket.org:leggedrobotics/ocs2_dev.git
+    version: 067733f104eca119237c88981c6aed3720f981a8
+  smb_common:
+    type: git
+    url: git@bitbucket.org:leggedrobotics/smb_common.git
+    version: dev/mpc
