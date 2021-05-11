@@ -82,7 +82,7 @@ catkin config -DCMAKE_BUILD_TYPE=Release
 
 # For later setup_hw.sh
 echo "WORKSPACE_NAME_CATKIN='$WORKSPACE_NAME' " >> ~/.bashrc
-sorce ~/.bashrc
+source ~/.bashrc
 
 
 echo "Downloading necessary 3rd party packages"
