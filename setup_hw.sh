@@ -1,5 +1,6 @@
 #!/bin/bash
 #install.sh
+source ~/.bashrc
 
 # Necessary libraries for RealSense 
 read -p "Installing necessary libraries for RealSense. Press enter to continue..."
@@ -18,13 +19,19 @@ sudo apt-get install -y libyaml-cpp-dev libpcap-dev libprotobuf-dev protobuf-com
 # Flir Camera driver install
 read -p "Installing driver of The RGB camera is a FLIR Blackfly S BFS-U3-16S2C. Press enter to continue..."
 
-
 cd $HOME/$WORKSPACE_NAME_CATKIN/src/smb_dev/drivers
 
 tar -xvf spinnaker-2.4.0.143-Ubuntu20.04-amd64-pkg.tar.gz 
 rm spinnaker-2.4.0.143-Ubuntu20.04-amd64-pkg.tar.gz 
 cd spinnaker-2.4.0.143-amd64/
 sudo dpkg -i libgentl_2.4.0.143_amd64.deb libspinnaker_2.4.0.143_amd64.deb libspinnaker-dev_2.4.0.143_amd64.deb libspinnaker-c_2.4.0.143_amd64.deb libspinnaker-c-dev_2.4.0.143_amd64.deb
+
+read -p "Setting up FLIR driver (libspinnaker). Enter username when asked!"
+sudo ./configure_gentl_paths.sh 64
+sudo ./configure_usbfs.sh
+sudo ./configure_spinnaker.sh
+sudo ./configure_spinnaker_paths.sh
+cd $HOME/$WORKSPACE_NAME_CATKIN/src/smb_dev/drivers
 rm -R spinnaker-2.4.0.143-amd64
 
 cd $HOME/$WORKSPACE_NAME_CATKIN/src
