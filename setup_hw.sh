@@ -26,7 +26,7 @@ rm -R spinnaker-2.4.0.143-amd64
 cd $HOME/$WORKSPACE_NAME_CATKIN/src
 
 echo "Downloading packages of sensors"
-vcs import . < smb_dev/smb_purged_hw.rosinstall
+vcs import . < smb_dev/smb_hw.rosinstall
 
 cd $HOME/$WORKSPACE_NAME_CATKIN
 catkin build 
