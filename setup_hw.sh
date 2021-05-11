@@ -19,6 +19,8 @@ sudo apt-get install -y libyaml-cpp-dev libpcap-dev libprotobuf-dev protobuf-com
 # Flir Camera driver install
 read -p "Installing driver of The RGB camera is a FLIR Blackfly S BFS-U3-16S2C. Press enter to continue..."
 
+## Dependency of spinnaker_camera_driver
+sudo apt install ros-noetic-roslint
 cd $HOME/$WORKSPACE_NAME_CATKIN/src/smb_dev/drivers
 
 tar -xvf spinnaker-2.4.0.143-Ubuntu20.04-amd64-pkg.tar.gz 
@@ -39,8 +41,18 @@ cd $HOME/$WORKSPACE_NAME_CATKIN/src
 echo "Downloading packages of sensors"
 vcs import . < smb_dev/smb_hw.rosinstall
 
-cd $HOME/$WORKSPACE_NAME_CATKIN
+# Versavis installation
+read -p "Installing versavis dependencies and udev rule. Press enter to continue..."
+## initialize submodules
+cd $HOME/$WORKSPACE_NAME_CATKIN/src/versavis
+git submodule update --init
+
+## dependency of rosserial
+sudo apt install python3-serial
+
+## install udev rules for versavis
+sudo cp $HOME/$WORKSPACE_NAME_CATKIN/src/versavis/firmware/98-versa-vis.rules /etc/udev/rules.d/
+sudo udevadm control --reload
+
+cd $HOME/$WORKSPACE_NAME_CATKIN/src
 catkin build 
-
-
-
