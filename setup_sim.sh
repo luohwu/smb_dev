@@ -48,7 +48,7 @@ source ~/.bashrc
 # Necessary packages of ROS
 read -p "Necessary official ROS packages will be installed. Press enter to continue..."
 
-sudo apt-get install -y ros-noetic-hector-gazebo-plugins ros-noetic-controller-manager ros-noetic-joint-state-controller ros-noetic-gazebo-plugins ros-noetic-transmission-interface ros-noetic-joint-limits-interface ros-noetic-joint-limits-interface ros-noetic-pointcloud-to-laserscan ros-noetic-twist-mux ros-noetic-perception-pcl ros-noetic-ros-control ros-noetic-gazebo-ros-control ros-noetic-cmake-modules ros-noetic-xacro ros-noetic-robot-state-publisher python3-catkin-tools python3-osrf-pycommon
+sudo apt-get install -y ros-noetic-hector-gazebo-plugins ros-noetic-controller-manager ros-noetic-joint-state-controller ros-noetic-gazebo-plugins ros-noetic-transmission-interface ros-noetic-joint-limits-interface ros-noetic-joint-limits-interface ros-noetic-pointcloud-to-laserscan ros-noetic-twist-mux ros-noetic-perception-pcl ros-noetic-ros-control ros-noetic-gazebo-ros-control ros-noetic-cmake-modules ros-noetic-xacro ros-noetic-robot-state-publisher python3-catkin-tools python3-osrf-pycommon ros-noetic-eigen-conversions
 
 
 # Catkin Workspace creation. User input
@@ -82,7 +82,7 @@ catkin config -DCMAKE_BUILD_TYPE=Release
 
 # For later setup_hw.sh
 echo "WORKSPACE_NAME_CATKIN='$WORKSPACE_NAME' " >> ~/.bashrc
-sorce ~/.bashrc
+source ~/.bashrc
 
 
 echo "Downloading necessary 3rd party packages"
