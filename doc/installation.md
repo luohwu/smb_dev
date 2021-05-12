@@ -43,6 +43,7 @@ Create a new catkin workspace.
 
 ```bash
 # crete the directories
+# Do not forget to change <...> parts
 mkdir -p <directory_to_ws>/<catkin_ws_name>/src
 cd <directory_to_ws>/<catkin_ws_name>/
 
@@ -50,6 +51,8 @@ cd <directory_to_ws>/<catkin_ws_name>/
 catkin init
 catkin config --extend /opt/ros/noetic
 catkin config -DCMAKE_BUILD_TYPE=Release
+
+
 ```
 example: 
 
@@ -61,7 +64,7 @@ cd ~/catkin_ws/
 ```
 To download the SMB packages, the vcs command-line tools will be used. For more information about the tool you can check the [link](http://wiki.ros.org/vcstool).
 
-To install vcstool run the following terminal command.
+To install ***vcstool*** run the following terminal command.
 
 ```bash
 sudo apt install python3-vcstool
@@ -69,7 +72,55 @@ sudo apt install python3-vcstool
 To download the SMB packages by using vcs tool run the following terminal command. 
 
 ```bash
+# Navigate to the directory of src
+# Do not forget to change <...> parts
+cd <directory_to_ws>/<catkin_ws_name>/src
+
+# Download the packages
 vcs import --recursive --input https://raw.githubusercontent.com/ETHZ-RobotX/smb_dev/refactor/purging/smb.repos .
 
-# Example ends
+```
+
+[comment]: <> (TODO: Multiple username/password asking problem!!! )
+
+## Installing Dependencies
+
+To install the dependencies, rosdep package will be used. For more information about the package you can check the [link](https://docs.ros.org/en/independent/api/rosdep/html/)
+
+To install ***rosdep*** package run the following terminal commands in order if you did not do in the ROS installation step.
+
+```bash
+sudo apt-get install python3-rosdep
+sudo rosdep init
+rosdep update
+```
+
+To download the SMB dependencies by using rosdep package run the following terminal commands in order. 
+```bash
+# Navigate to the directory of workspace
+# Do not forget to change <...> parts
+cd <directory_to_ws>/<catkin_ws_name>/
+
+# Magic of rosdep
+rosdep install --from-paths . --ignore-src --os=ubuntu:focal -r -y
+```
+[comment]: <> (TODO: Is it correct? which directory should I be?  )
+
+Installing all the dependency may take a while. 
+
+## Verification
+Since every SMB package and dependency is installed, you can build the project.
+```bash
+# Navigate to the directory of workspace
+cd <directory_to_ws>/<catkin_ws_name>/
+
+catkin build
+```
+
+You should see that every package is built.
+After you buil the packages, you can add the source file into .bashrc so that you do not have to source it everytime you log in a new terminal. 
+
+```bash
+# Do not forget to change <...> parts
+echo "source <directory_to_ws>/<catkin_ws_name>/devel/setup.bash" >> ~/.bashrc
 ```
