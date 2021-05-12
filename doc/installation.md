@@ -6,7 +6,7 @@
 
 ## Remark
 
-SMB system consist of two part: simulation and hardware. If you want to use the system on a real SMB Robot with real sensors and actuators, hardware part should be installed **on top of the simulation part**. This document contains the instruction about SMB Simulation Software. To install SMB Simulation Hardware plaese refer to this [document](installation_wh.md). 
+SMB system consist of two part: simulation and hardware. If you want to use the system on a real SMB Robot with real sensors and actuators, hardware part should be installed **on top of the simulation part**. This document contains the instruction about SMB Simulation Software. To install SMB Hardware plaese refer to this [document](installation_wh.md). 
 
 ***(TODO: Add hardware document link )***
 
@@ -32,10 +32,9 @@ printenv | grep ROS
 
 ## Closed source packages
 
-Currently, for some of the core software packages, you'll need to be granted access by the RSL. These repositories are hosted on bitbucket, thus you'll need a bitbucket (Atlassian) account. 
+Currently, for some of the core software packages, you'll need to be granted access by the [Robotic Systems Lab](https://rsl.ethz.ch/). These repositories are hosted on bitbucket, thus you'll need a bitbucket (Atlassian) account. 
 Send your account details (username and associated email address) to [Johannes from RSL](https://rsl.ethz.ch/the-lab/people/person-detail.MjU0MDk1.TGlzdC8yNDQyLC0xNDI1MTk1NzM1.html) and ask for permission to access the RSS related SMB repositories.
 
-***(TODO: Is the name correct? )***
 
 ## Catkin Workspace and all Packages
 
@@ -81,7 +80,7 @@ vcs import --recursive --input https://raw.githubusercontent.com/ETHZ-RobotX/smb
 
 ```
 
-***(TODO: Multiple username/password asking problem!!! )***
+***(TODO: Multiple username/password asking problem!!! )*** --> go with ssh authentification for the time being!
 
 ## Installing Dependencies
 
@@ -104,7 +103,7 @@ cd <directory_to_ws>/<catkin_ws_name>/
 # Magic of rosdep
 rosdep install --from-paths . --ignore-src --os=ubuntu:focal -r -y
 ```
-***(TODO: Is it correct? in which directory should I be?  )***
+***(TODO: Is it correct? in which directory should I be?  )*** -> `<catkin_ws_name>/src`
 
 Installing all the dependency may take a while. 
 
