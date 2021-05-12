@@ -8,7 +8,7 @@
 
 SMB system consist of two part: simulation and hardware. If you want to use the system on a real SMB Robot with real sensors and actuators, hardware part should be installed **on top of the simulation part**. This document contains the instruction about SMB Simulation Software. To install SMB Simulation Hardware plaese refer to this document. 
 
-[comment]: <> (TODO: Add hardware document link )
+***(TODO: Add hardware document link )***
 
 
 ## Prerequisites
@@ -23,26 +23,26 @@ echo $ROS_DISTRO
 ```
 If you do not see the output, please refer to the [official ROS website](http://wiki.ros.org/noetic/Installation/Ubuntu) to install **ROS Noetic Desktop**. 
 
-After installation, please ensure that environment variables like ROS_ROOT and ROS_PACKAGE_PATH are set in order to verify the installation by running the following terminal command.
+After installation, please ensure that environment variables like ROS_ROOT and ROS_PACKAGE_PATH are set. In order to verify the installation by running the following terminal command.
 
 ```bash
 printenv | grep ROS
 ```
-[comment]: <> (TODO: Noetic Desktop or Desktop Full )
+***(TODO: Noetic Desktop or Desktop Full )***
 
 ## Closed source packages
 
 Currently, for some of the core software packages, you'll need to be granted access by the RSL. These repositories are hosted on bitbucket, thus you'll need a bitbucket (Atlassian) account. 
 Send your account details (username and associated email address) to [Johannes from RSL](https://rsl.ethz.ch/the-lab/people/person-detail.MjU0MDk1.TGlzdC8yNDQyLC0xNDI1MTk1NzM1.html) and ask for permission to access the RSS related SMB repositories.
 
-[comment]: <> (TODO: Is the name correct? )
+***(TODO: Is the name correct? )***
 
 ## Catkin Workspace and all Packages
 
 Create a new catkin workspace.
 
 ```bash
-# crete the directories
+# create the directories
 # Do not forget to change <...> parts
 mkdir -p <directory_to_ws>/<catkin_ws_name>/src
 cd <directory_to_ws>/<catkin_ws_name>/
@@ -69,7 +69,7 @@ To install ***vcstool*** run the following terminal command.
 ```bash
 sudo apt install python3-vcstool
 ```
-To download the SMB packages by using vcs tool run the following terminal command. 
+To download the SMB packages by using vcs tool run the following terminal commands in order. 
 
 ```bash
 # Navigate to the directory of src
@@ -81,13 +81,13 @@ vcs import --recursive --input https://raw.githubusercontent.com/ETHZ-RobotX/smb
 
 ```
 
-[comment]: <> (TODO: Multiple username/password asking problem!!! )
+***(TODO: Multiple username/password asking problem!!! )***
 
 ## Installing Dependencies
 
 To install the dependencies, rosdep package will be used. For more information about the package you can check the [link](https://docs.ros.org/en/independent/api/rosdep/html/)
 
-To install ***rosdep*** package run the following terminal commands in order if you did not do in the ROS installation step.
+To install ***rosdep*** package run the following terminal commands in order, unless you did not do in the ROS installation step.
 
 ```bash
 sudo apt-get install python3-rosdep
@@ -104,11 +104,11 @@ cd <directory_to_ws>/<catkin_ws_name>/
 # Magic of rosdep
 rosdep install --from-paths . --ignore-src --os=ubuntu:focal -r -y
 ```
-[comment]: <> (TODO: Is it correct? which directory should I be?  )
+***(TODO: Is it correct? in which directory should I be?  )***
 
 Installing all the dependency may take a while. 
 
-## Verification
+## Finalization
 Since every SMB package and dependency is installed, you can build the project.
 ```bash
 # Navigate to the directory of workspace
@@ -118,7 +118,7 @@ catkin build
 ```
 
 You should see that every package is built.
-After you buil the packages, you can add the source file into .bashrc so that you do not have to source it everytime you log in a new terminal. 
+After you built the packages, you can add the source file into .bashrc so that you do not have to source it everytime you log in a new terminal. 
 
 ```bash
 # Do not forget to change <...> parts
