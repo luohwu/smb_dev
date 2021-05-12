@@ -1,9 +1,16 @@
 repositories:
   ocs2_dev:
     type: git
-    url: git@bitbucket.org:leggedrobotics/ocs2_dev.git
+    url: https://bitbucket.org:leggedrobotics/ocs2_dev.git
     version: 067733f104eca119237c88981c6aed3720f981a8
   smb_common:
     type: git
-    url: git@bitbucket.org:leggedrobotics/smb_common.git
+    url: https://bitbucket.org:leggedrobotics/smb_common.git
     version: dev/ros_control
+  smb_lowlevel_control:
+    type: git
+    url: https://bitbucket.org/leggedrobotics/smb_lowlevel_controller.git
+    version: dev/effort_control
+
+
+

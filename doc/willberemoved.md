@@ -3,7 +3,8 @@
 
 # Setting up the SMB software
 ## Prerequisites
-Ubuntu 20.04
+ROS Noetic 
+Ubuntu 20.04 
 
 ### Closed source packages
 
