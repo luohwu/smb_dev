@@ -6,4 +6,4 @@ repositories:
   smb_common:
     type: git
     url: git@bitbucket.org:leggedrobotics/smb_common.git
-    version: dev/mpc
+    version: dev/ros_control
