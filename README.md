@@ -5,7 +5,7 @@ This repository containins instructions to set up the SuperMegaBot as used for t
 The SuperMegaBot was originally developped by the ETH Construction Robotics group.
 
 ## Software setup
-To set up the SuperMegaBot software on your personal computer (for simulation) or on the robot, check out the [installation documentation](doc/software_install.md).
+To set up the SuperMegaBot software on your personal computer (for simulation) or on the robot, check out the [installation documentation](doc/installation.md).
 
 Details on how to run the simulation are given in the [path planner reposiotry](https://github.com/VIS4ROB-lab/smb_path_planner)
 
