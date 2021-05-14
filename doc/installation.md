@@ -1,15 +1,14 @@
 
 # Setting up the SMB Simulation Software
-> The updated SMB software is still work in progress! Thus, this documentation explains the steps to install SMB software. Installation process might be lack of some dependencies. 
+> The updated SMB software is still work in progress! Thus, this documentation explains the steps to install SMB software. Installation process might lack of some dependencies. 
 
 > Please inform oilter@ethz.ch for any missing library, package, driver, error or any kind of unclear instruction.
 
 ## Remark
 
-SMB system consist of two part: simulation and hardware. If you want to use the system on a real SMB Robot with real sensors and actuators, hardware part should be installed **on top of the simulation part**. This document contains the instruction about SMB Simulation Software. To install SMB Simulation Hardware plaese refer to this [document](installation_wh.md). 
+SMB system consist of two part: simulation and hardware. If you want to use the system on a real SMB Robot with real sensors and actuators, hardware part should be installed **on top of the simulation part**. This document contains the instruction about SMB Simulation Software. To install SMB Simulation Hardware plaese refer to this [document](doc/installation_wh.md).
 
 ***(TODO: Add hardware document link )***
-
 
 ## Prerequisites
 - ROS Noetic
