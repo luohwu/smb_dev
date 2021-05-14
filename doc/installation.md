@@ -8,8 +8,6 @@
 
 SMB system consist of two part: simulation and hardware. If you want to use the system on a real SMB Robot with real sensors and actuators, hardware part should be installed **on top of the simulation part**. This document contains the instruction about SMB Simulation Software. To install SMB Simulation Hardware plaese refer to this [document](doc/installation_wh.md).
 
-***(TODO: Add hardware document link )***
-
 ## Prerequisites
 - ROS Noetic
 > Note that, the system has been developed in Ubuntu 20.04.
@@ -49,10 +47,11 @@ cd <directory_to_ws>/<catkin_ws_name>/
 catkin init
 catkin config --extend /opt/ros/noetic
 catkin config -DCMAKE_BUILD_TYPE=Release
-
-
 ```
-example: 
+
+<details><summary> Example: </summary>
+<p>
+
 
 ```bash
 # Example directory to ws and catkin workspace name
@@ -60,6 +59,12 @@ mkdir -p ~/catkin_ws/src
 cd ~/catkin_ws/
 # Example ends
 ```
+
+</p>
+</details>
+
+
+
 To download the SMB packages, the vcs command-line tools will be used. For more information about the tool you can check the [link](http://wiki.ros.org/vcstool).
 
 To install ***vcstool*** run the following terminal command.
@@ -76,10 +81,7 @@ cd <directory_to_ws>/<catkin_ws_name>/src
 
 # Download the packages
 vcs import --recursive --input https://raw.githubusercontent.com/ETHZ-RobotX/smb_dev/refactor/purging/smb.repos .
-
 ```
-
-***(TODO: Multiple username/password asking problem!!! )*** --> go with ssh authentification for the time being!
 
 ## Installing Dependencies
 
@@ -97,12 +99,11 @@ To download the SMB dependencies by using rosdep package run the following termi
 ```bash
 # Navigate to the directory of workspace
 # Do not forget to change <...> parts
-cd <directory_to_ws>/<catkin_ws_name>/
+cd <directory_to_ws>/<catkin_ws_name>/src
 
 # Magic of rosdep
 rosdep install --from-paths . --ignore-src --os=ubuntu:focal -r -y
 ```
-***(TODO: Is it correct? in which directory should I be?  )*** -> `<catkin_ws_name>/src`
 
 Installing all the dependency may take a while. 
 
