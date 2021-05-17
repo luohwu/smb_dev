@@ -113,10 +113,12 @@ Since every SMB package and dependency is installed, you can build the project.
 # Navigate to the directory of workspace
 cd <directory_to_ws>/<catkin_ws_name>/
 
-catkin build
+catkin build smb_gazebo
 ```
+You should see that smb_gazebo and all of its dependencies are built.
 
-You should see that every package is built.
+If you execute `catkin build` instead of `catkin build smb_gazebo`, _all_ packages in your catkin workspace will be built. This includes some packages that are not needed for the SMB but are part of the repositories that contain some dependency of the SMB project. 
+
 After you built the packages, you can add the source file into .bashrc so that you do not have to source it everytime you log in a new terminal. 
 
 ```bash
