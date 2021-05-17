@@ -7,6 +7,6 @@ repositories:
     type: git
     url: git@bitbucket.org:leggedrobotics/smb_common.git
     version: dev/ros_control
-  robosense
+  robosense:
     type: git
     url: https://github.com/tomlogan501/robosense_simulator.git
