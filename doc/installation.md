@@ -32,8 +32,16 @@ printenv | grep ROS
 Currently, for some of the core software packages, you'll need to be granted access by the [Robotic Systems Lab](https://rsl.ethz.ch/). These repositories are hosted on bitbucket, thus you'll need a bitbucket (Atlassian) account. 
 Send your account details (username and associated email address) to [Johannes from RSL](https://rsl.ethz.ch/the-lab/people/person-detail.MjU0MDk1.TGlzdC8yNDQyLC0xNDI1MTk1NzM1.html) and ask for permission to access the RSS related SMB repositories.
 
+In order to be able to download the repositories, you have to add your SSH key to Bitbucket. Please follow this guide: [Set up an SSH key](https://support.atlassian.com/bitbucket-cloud/docs/set-up-an-ssh-key/).
+
 
 ## Catkin Workspace and all Packages
+
+Install the tools: ***vcstool*** and ***catkin_tools***
+
+```bash
+sudo apt install python3-vcstool python3_catkin_tools
+```
 
 Create a new catkin workspace.
 
@@ -67,11 +75,6 @@ cd ~/catkin_ws/
 
 To download the SMB packages, the vcs command-line tools will be used. For more information about the tool you can check the [link](http://wiki.ros.org/vcstool).
 
-To install ***vcstool*** run the following terminal command.
-
-```bash
-sudo apt install python3-vcstool
-```
 To download the SMB packages by using vcs tool run the following terminal commands in order. 
 
 ```bash
@@ -90,7 +93,7 @@ To install the dependencies, rosdep package will be used. For more information a
 To install ***rosdep*** package run the following terminal commands in order, unless you did not do in the ROS installation step.
 
 ```bash
-sudo apt-get install python3-rosdep
+sudo apt install python3-rosdep libglpk-dev
 sudo rosdep init
 rosdep update
 ```
