@@ -93,7 +93,7 @@ To install the dependencies, rosdep package will be used. For more information a
 To install ***rosdep*** package run the following terminal commands in order, unless you did not do in the ROS installation step.
 
 ```bash
-sudo apt install python3-rosdep libglpk-dev
+sudo apt install python3-rosdep
 sudo rosdep init
 rosdep update
 ```
