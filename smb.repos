@@ -10,3 +10,15 @@ repositories:
   robosense_simulator:
     type: git
     url: https://github.com/tomlogan501/robosense_simulator.git
+  smb_path_planner:
+    type: git
+    url: https://github.com/VIS4ROB-lab/smb_path_planner.git
+    version: noetic
+  eigen_catkin:
+    type: git
+    url: https://github.com/ethz-asl/eigen_catkin.git
+    version: master
+  catkin_simple:
+    type: git
+    url: https://github.com/catkin/catkin_simple.git
+    version: master
